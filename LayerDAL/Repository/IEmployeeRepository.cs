@@ -11,5 +11,9 @@ namespace LayerDAL.Repository
     {
         Task<List<Employee>> GetEmployees();
         void AddEmp(Employee employee);
+        Task<Employee> EditEmp(Guid id);
+        void UpdateEmp(Employee employee);
+        void DeleteEmp(Guid id);
+        
     }
 }
